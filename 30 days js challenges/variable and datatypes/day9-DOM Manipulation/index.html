@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+        #myImage{
+            width:200px;
+            height:200px;
+        }
+        #color{
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+
+  </head>
+  <body>
+    <p id="myElement">This is the old text.</p>
+    <div class="color">hi I am krishna</div>
+    <button onclick="changeText()">change text</button>
+    <button onclick="changeBackgroundColor()">change color</button>
+    <button onclick="appendDiv()">Add div</button>
+    <ul id="myList">
+        <li>Existing item 1</li>
+        <li>Existing item 1</li>
+        <li>Existing item 1</li>
+    </ul>
+    <button onclick="addListItem()">Add list item method</button>
+    <button onclick="removeElement()">Remove Element</button>
+    <button onclick="removeLastChild()">Remove Last Item</button>
+    <img id="myImage" src="img1.jpg" alt="old img">
+    <button onclick="changeImageSource()">Change Image</button>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <button id="myButton">Change Text</button>
+    <div id="color">Hover over me!</div>
+    <script src="index.js"></script>
+  </body>
+</html>
