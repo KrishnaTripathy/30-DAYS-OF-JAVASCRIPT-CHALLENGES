@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search App</h1>
+        <input type="text" id="search" placeholder="Search for a movie...">
+        <button id="search-btn">Search</button>
+        <div id="results" class="results-container">
+            <!-- Movie search results will be displayed here -->
+        </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Movie Details</h2>
+            <div id="modal-body">
+                <!-- Movie details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+ <!-- Add this section below the results container
+<div id="movie-details" class="movie-details-section">
+    <button id="close-details-btn" class="close-details-btn">Close</button>
+    <div id="details-content">
+         Detailed movie information will be injected here -->
+    <!-- </div>
+</div>
+  -->
+
+
+    <script src="Task.js"></script>
+</body>
+</html>
