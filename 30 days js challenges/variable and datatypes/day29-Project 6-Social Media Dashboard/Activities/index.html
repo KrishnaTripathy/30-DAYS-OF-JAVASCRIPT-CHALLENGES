@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Social Media Dashboard</h1>
+    </header>
+    <main>
+        <section id="post-container">
+            <!-- Posts will be dynamically added here -->
+        </section>
+        <section id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="post-creation">
+            <h2>Create a Post</h2>
+            <form id="create-post-form">
+                <label for="post-text">Post Text:</label>
+                <textarea id="post-text" name="post-text" placeholder="Write your post here..." rows="4" required></textarea>
+                
+                <label for="post-image">Post Image URL:</label>
+                <input type="url" id="post-image" name="post-image" placeholder="Optional image URL">
+                
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        
+        
+        <form id="new-post-form">
+            <input type="text" id="post-content" placeholder="What's on your mind?" required>
+            <button type="submit">Post</button>
+        </form>
+    </main>
+    <script src="Task.js"></script>
+</body>
+</html>
