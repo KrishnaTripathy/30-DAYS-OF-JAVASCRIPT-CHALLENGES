@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>User Information</h2>
+            <!-- Sidebar content -->
+        </aside>
+        <main class="main-content">
+            <div id="auth-container">
+                <!-- Existing auth forms -->
+            </div>
+
+            <!-- User Profile Page -->
+            <div id="profile-container" style="display: none;">
+                <!-- Profile form -->
+            </div>
+
+            <!-- Post Creation Form -->
+            <div id="post-container" style="display: none;">
+                <h2>Create a Post</h2>
+                <form id="post-form">
+                    <textarea id="post-text" placeholder="What's on your mind?" required></textarea>
+                    <input type="text" id="post-image" placeholder="Image URL (optional)">
+                    <button type="submit">Post</button>
+                </form>
+
+                <h2>Post Feed</h2>
+                <div id="post-feed"></div>
+            </div>
+            <!-- Add this sidebar to your existing HTML structure -->
+<div id="notification-sidebar" class="notification-sidebar">
+    <h2>Notifications</h2>
+    <ul id="notification-list">
+        <!-- Notifications will be dynamically added here -->
+    </ul>
+</div>
+<div id="post-feed" class="post-feed">
+    <!-- Example Post -->
+    <div class="post" data-username="john_doe">
+        <p><strong>john_doe</strong> - August 14, 2024</p>
+        <p class="post-text">This is a sample post.</p>
+        <img src="path/to/image.jpg" alt="Post Image">
+        <!-- Post Actions -->
+        <div class="post-actions">
+            <button class="like-button">Like (0)</button>
+            <button class="comment-button">Comment (0)</button>
+        </div>
+        <div class="comments-container" style="display: none;">
+            <textarea class="comment-input" placeholder="Add a comment"></textarea>
+            <button class="add-comment-button">Add Comment</button>
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+    <script src="Task.js"></script>
+</body>
+</html>

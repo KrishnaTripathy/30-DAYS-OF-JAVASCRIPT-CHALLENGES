@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+#create-post-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#create-post-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#create-post-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#create-post-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#create-post-form button:hover {
+    background-color: #0056b3;
+}
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+/* Styles for forms */
+#auth-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form-container, #register-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#auth-container p {
+    text-align: center;
+}
+
+#auth-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#auth-container a:hover {
+    text-decoration: underline;
+}
+#profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#profile-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#profile-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#profile-form button:hover {
+    background-color: #0056b3;
+}
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#post-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+    resize: vertical;
+}
+
+#post-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#post-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#post-form button:hover {
+    background-color: #0056b3;
+}
+
+#post-feed .post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+#post-feed .post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#post-feed .post .post-text {
+    margin: 0.5rem 0;
+}
+.post-actions {
+    margin: 1rem 0;
+}
+
+.post-actions button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.post-actions button:hover {
+    background-color: #0056b3;
+}
+
+.comments-container {
+    margin-top: 1rem;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-comment-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.add-comment-button:hover {
+    background-color: #218838;
+}
+.notification-sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #f4f4f4;
+    border-left: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.notification-sidebar h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.notification-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.notification-list li:hover {
+    background: #f0f0f0;
+}
+.post {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post[data-username="john_doe"] {
+    border: 2px solid #4CAF50; /* Highlight logged-in user's posts */
+    background-color: #e8f5e9; /* Light green background */
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.post {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-sidebar li {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notification-sidebar li.show {
+    opacity: 1;
+    transform: translateX(0);
+}
